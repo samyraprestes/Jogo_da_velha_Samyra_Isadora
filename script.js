@@ -26,18 +26,16 @@ const script = {
 
     draw: function(){
         let content = '';
-
         for(i in this,this.board){
             content += '<div onclick = "script.make_play(' + i + ')">' + this.board[i] + '</div>';
-        }
-
+        }       
         this.container_element.innerHTML = content;
-    }
-
-
-
-
-
-
-
+    },
+    
+    apagar: function (){
+        this.board = ['','','','','','','','','']
+        this.draw();
+    },
 };
+
+
