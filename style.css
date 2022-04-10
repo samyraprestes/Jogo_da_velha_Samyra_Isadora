@@ -1,0 +1,8 @@
+.game{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #FF1493;
+    color: #8B0A50;
+    border: 6px;
+}
