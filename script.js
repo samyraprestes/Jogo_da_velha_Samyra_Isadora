@@ -49,7 +49,7 @@ const script = {
             if (this.board[ this.acertos[i][0] ] == simbol  &&
                 this.board[ this.acertos[i][1] ] == simbol &&
                 this.board[ this.acertos[i][2] ] == simbol) {
-                console.log('Sequência do acerto' + i);
+                alert("Sequência do acerto: " + i);
                 return i;
             }
         };
@@ -58,7 +58,7 @@ const script = {
 
     fim_de_jogo: function() {
         this.fimdejogo = true;
-        console.log('FIM DE JOGO');
+        alert("FIM DE JOGO");
     },
 
     start: function() {
@@ -75,5 +75,10 @@ const script = {
         };
 
         this.container_element.innerHTML = content;
+    },
+
+    apagar: function (){
+        this.board = ['','','','','','','','',''];
+        this.draw();
     },
 };

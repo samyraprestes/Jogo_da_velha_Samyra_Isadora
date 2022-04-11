@@ -1,6 +1,28 @@
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 3em;
+    color: #8B0A50;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 10px;
+    font-weight: bold;
+    font-variant: small-caps;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
 .game{
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     margin: 0 auto;
     background-color: #FF1493;
     color: #8B0A50;
@@ -21,3 +43,30 @@
     align-items: center;
 
 } 
+
+.apagar > button{
+    font-size: 1.0em;
+    background-color: aliceblue;
+    color:#8B0A50;
+    padding: 10px 20px;
+    top: 500px;
+    left: 600px;
+    position: absolute;
+    border-color: #FF1493;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF1493;
+    height: 50px;
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+    position:absolute;
+    bottom: 0;
+}
+footer > p{
+    font-size: 1.5em;
+}
